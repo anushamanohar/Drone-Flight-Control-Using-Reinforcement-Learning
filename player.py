@@ -72,7 +72,6 @@ class SACPlayer(Player):
         self.thruster_amplitude = 0.04
         self.diff_amplitude = 0.003
         model_path = "models/sac_model_v2_1000000_steps.zip"
-        #model_path = "models/rl_model_v2_10000000_steps.zip"
         model_path = os.path.join(os.path.dirname(__file__), model_path)
         self.path = model_path
         super().__init__()
@@ -124,7 +123,6 @@ class A2CPlayer(Player):
         self.alpha = 150
         self.thruster_amplitude = 0.04
         self.diff_amplitude = 0.003
-        #model_path = "models/a2c_model_v1_1000000_steps.zip"
         model_path = "models/a2c_model_v2_1000000_steps.zip"
         model_path = os.path.join(os.path.dirname(__file__), model_path)
         self.path = model_path
@@ -151,7 +149,6 @@ class PPOPlayer(Player):
         self.alpha = 200
         self.thruster_amplitude = 0.04
         self.diff_amplitude = 0.003
-        #model_path = "models/a2c_model_v1_1000000_steps.zip"
         model_path = "models/ppo_model_v2_1000000_steps.zip"
         model_path = os.path.join(os.path.dirname(__file__), model_path)
         self.path = model_path
